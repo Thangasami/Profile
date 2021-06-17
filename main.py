@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for, render_template
+from flask import Flask, redirect, url_for, render_template, send_file
 
 app = Flask(__name__)
 
@@ -18,6 +18,15 @@ def journey():
 @app.route("/reach")
 def reach():
     return render_template("reach.html")
+
+@app.route("/resume")
+def resume():
+    return render_template("resume.html")
+
+@app.route("/download")
+def download_file():
+    p = "resume.pdf"
+    return send_file(p,as_attachment=True)
 
 if __name__ == "__main__":
     app.run()

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %} download Resume {% endblock %}
+{% block content %}
+<html>
+<head>
+    <title></title>
+
+
+</head>
+<br>
+<br><br><br><br><br><br>
+
+<h3><marquee scrollamount="20"  > Click the link to download the Resume. </marquee></h3>
+  <p><h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <a href="{{url_for('download_file')}}"> Thanga's Resume </a></h3>
+  </p>
+
+ {% endblock %}
