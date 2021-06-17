@@ -15,6 +15,9 @@ def admin():
 def journey():
     return render_template("journey.html")
 
+@app.route("/reach")
+def reach():
+    return render_template("reach.html")
 
 if __name__ == "__main__":
     app.run()
