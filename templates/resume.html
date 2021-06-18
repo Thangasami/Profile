@@ -8,12 +8,33 @@
 
 </head>
 <br>
-<br><br><br><br><br><br>
 
-<h3><marquee scrollamount="20"  > Click the link to download the Resume. </marquee></h3>
-  <p><h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-      <a href="{{url_for('download_file')}}"> Thanga's Resume </a></h3>
+
+<h3><marquee scrollamount="20"  > Click the link 'RESUME IN PDF' to download the Resume. </marquee></h3>
+  <p><h3 style="text-align:center;">&emsp;&emsp;
+      <a href="{{url_for('download_file')}}">RESUME IN PDF </a></h3>
   </p>
+<br><center>
+<img src="{{url_for('static', filename='a.jpg')}}" class="img-fluid" width="400"  height="300" /></center>
+<br>
+<h2 style="text-align:center;">FAQ</h2><br>
+<h3 style="text-align:center;">Why did you make this website?</h3><br>
+<p>&emsp;I created and deployed this website on Heroku Cloud so that I could learn more about web app design and back-end development.
+In the future I will use this website as a nesting ground for web-based computer vision and NLP models.
+    Though I don't expect it to be anything more than a portfolio site, I strongly suspect that these skills will be crucial to technological development in the years to come.
+</p><br>
+<h3 style="text-align:center;">How long have you been practicing machine learning?</h3><br>
+<p>&emsp;I discovered machine learning at the beginning of 2015 while working in Wipro.
+    Since then, I have immersed myself in data science communities on Medium and across the web.
+I have rich experience in building machine learning solutions for NLP tasks. I have built models to assist in sentiment analysis, demographic clustering, and topic modelling.</p>
+  <br><h3 style="text-align:center;">Why are you interested in NLP/Machine Learning?</h3><br>
+<p>&emsp;I am curious by nature. Machine learning and natural language processing are both excellent tools to understand the world better.
 
- {% endblock %}
+Despite the hype over integrating AI into existing technologies, the implementation of machine learning (especially NLP) is still in its infancy. This field is the wildwest, and I want to work with the pioneers and innovators that create new and amazing things.
+</p><br>
+ <h3 style="text-align:center;">What kind of work do you see yourself doing?</h3><br>
+<p> &emsp;
+I am interested in building modular machine learning applications that can communicate with existing production systems.
+Position titles that do this work are not well defined. I describe my perfect future position to be a mix of data science, machine learning engineering, and devops. Essentially a machine learning specialist with the skills to deploy a model to production.
+</p><br>
+    {% endblock %}

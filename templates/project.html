@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% block title %} Project {% endblock %}
+{% block content %}
+<html>
+<head>
+    <title></title>
+
+</head>
+</html>
+     <br>
+<br>
+<h3 style="text-align:center;"> Official Projects Worked in FISERV </h3><br>
+<br>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">NLP – Text classifier with Neural networks</h5>
+        <p class="card-text">Business case:
+Financial advisor enters a 5000-character free form text documenting their annual review
+with the client. It’s an audit requirement that the review text is documented extensively.
+40-member team manually reads through the text rates them good or bad. <br> <br>
+Solution: Supervised NLP classifier is built to classify the text and gives it a probability
+score of how good or bad the review text is. Historical review classification is taken as training data. Basic text preprocessing
+such as removing punctuations, numbers, custom stopwords, lemmatization is applied.
+Used combination of Word2vec and FastText for the vectorizer. Neural network with
+sigmoid at the final layer to give us a probability score of goodness of the review.
+</p>
+        <a href="#" class="btn btn-primary">Tools Used: NLP Word2vec FastText vectorizer FiservOwnedCloud        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">TIME SERIES: GBS Transactions Forecast </h5>
+        <p class="card-text">Business case: GBS team is sending Various Network transaction summary details to higher management on daily basis. Since those details are coming from various platform like Omaha, Byepass, North, Compass etc, There is high chance to incorrect value in final report.
+            Manual Verification is performed by team members before mail triggered. <br> <br>
+Solution: Time series model is created to avoid this manual work. The model is able to predict about 40000 transaction variance. Automated tool will compare our model prediction with actual value. Entire model has been deployed into AWS. Mail will be sent to higher management only if the actual values are with in the limit. It saves 6 hours weekly effort to the team </p><br>
+        <a href="#" class="btn btn-primary">Tools Used: Decomposition Method, FBProphet, Splunk, AWS  </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> Multi Input Neural Network: Semantic Data Type Detection</h5>
+        <p class="card-text">Business case:
+GIO(Global Infrastructure Operation) Team requires Semantic Data Type Detection model for FISERV owned internal cloud process. Correctly detecting the semantic type of data columns is crucial for
+data science tasks such as automated data cleaning, schema matching, and data discovery.  <br> <br>
+Solution: We introduce FIS-Semantic model, a multi-input deep neural network
+for detecting semantic types. We train FIS-Semantic on 686, 765 data
+columns retrieved from the VizNet corpus by matching 78 semantic types from DBpedia to column headers. We characterize each
+matched column with 1, 588 features describing the statistical properties, character distributions, word embeddings, and paragraph
+vectors of column values. FIS-Semantic achieves a support-weighted
+F1 score of 0.89, exceeding that of machine learning baselines,
+</p>
+        <a href="#" class="btn btn-primary">Tools Used: Deep Learning, VizNet, DBPedia, Global Statistics,  FiservOwnedCloud        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">CNN - Automating the process of Tax Receipts Entry</h5>
+        <p class="card-text">Business case: Greece Merchant Master System is getting tax details by manual process.
+            Scanned Tax receipt copies will be entered into database manually by data entry operators. Automating this
+            entire process using image classification and CNN, will save lot of manual efforts and money to the Organization<br> <br>
+Solution: Entire process is automated by using CNN and Pretrained model from Tensorflow Hub.
+            Using transfer learning approach and CNN architecture, the model is able to identify structure and characters of the Tax receipts successfully.
+            New automation process saved more than 100,000$ for FISERV. Entire Model is later deployed into GCP.
+</p><br>
+        <a href="#" class="btn btn-primary">Tools Used: CNN, Transfer Learning, GCP, Tensorflow Hub, Data Augmentation  </a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<h3 style="text-align:center;"> Official Projects Worked in WIPRO </h3><br>
+ </div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> Ridge Regression: Predict Account objectives with underlying holding data.</h5>
+        <p class="card-text">Business case: Every wealth Management Account is created with an objective which
+could be Income or Growth. Advisors work hard to manage account holdings so the
+account stick to the clients intended objective. <br> <br>
+Solution: Built a Logistic regression model that will predict what is the objective of the
+account based on its holding % of various assets and strategies that the accounts is tied
+into.Supervised training data from the past is used. Ridge was used for the regularization. Achieved an F1score of 92%. AWS Deployment. </p><br>
+        <a href="#" class="btn btn-primary">Tools Used: Kfold Cross Validation, Ridge Regression, Flask, AWS  </a>
+      </div>
+    </div>
+  </div>
+ <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Random Forest - Customer Churn Prediction (POC) </h5>
+        <p class="card-text">Business case: Customer Risk score is calculated by RMW system using standard Rule based calculation. Customer Churn model is required to cross validate the existing system performance.  <br> <br>
+Solution: Based on Card Payment, Card Statement and KYC details, Random Forest model was created. Later The model was fine tuned later with GridSearchCV hyper Parameters. Its performance was compared with existing RMW system and our model gave good accuracy results. This project was created as POC for MasterCard Account  </p><br>
+        <a href="#" class="btn btn-primary">Tools Used: Random Forest, SMOTE Techniques, FLASK  </a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<h3 style="text-align:center;"> Personal Projects </h3><br>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">FISERV Hackathon: Cost to Hospital Prediction</h5>
+        <p class="card-text">Problem Statement:
+Hospital Admission and Discharge Dataset was given and we were asked to provide some value added data science solutions <br> <br>
+Solution: We have developed a solution to predict Hospital approximate cost details based on patient admission time details. Not only prediction, Small streamlit app was created for this solution. The app will predict cost details based on given input. Also it will run all possible machine learning models and compare its results. We got second prize in Global level FISERV Hackathon.(More than 100 teams participated in this competition)
+</p><br>
+        <a href="http://costtohospital.herokuapp.com/" class="btn btn-primary">Click here to launch the application       </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">XGBoost: Morning Hours Equity Price Prediction  </h5>
+        <p class="card-text">Objective: Price prediction in Share Market is highly complex and depends on various micro and macro economic factors.
+            However, Previous close, today opening, volume plays major role in first 30 mins in stock market. <br> <br>
+Solution: Developed a model by using XGBoost algorithm. The model is using morning factors of trading as input and predict price with good accuracy </p><br>
+       <br> <a href="#" class="btn btn-primary"> Tools Used: Auto ViML, XGBoost, Streamlit, YFinance  </a>
+      </div>
+    </div>
+  </div>
+</div> <br>
+     <h3 style="text-align:center;"> Blog Articles </h3><br>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">SQL Vs PANDAS</h5>
+        <p class="card-text">SQL and Pandas are two database handling methods playing a vital role in the Datascience world. In this article, The comparisons between the two are analyzed.
+</p><br>
+        <a href="https://thangasami.medium.com/sql-vs-pandas-2c88e09dacfe" class="btn btn-primary">Click here to go to the page </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Auto-ViML — Minimum Guarantee Machine Learning Package</h5>
+        <p class="card-text">Auto ViML is great package for all in one machine learning operations. It is doing all ML related work such as Feature Engineering, Data Preprocessing, Cleaning, Handling Data Imbalancing, Model Selection, Hyper parameter tuning all by itself. My experience on usage of this tool is explained in this article</p><br>
+
+        <a href="https://thangasami.medium.com/auto-viml-minimum-guarantee-machine-learning-package-98f83953093a" class="btn btn-primary">Click here to go to the page </a>
+      </div>
+    </div>
+  </div>
+</div>       {% endblock %}

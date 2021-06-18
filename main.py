@@ -19,6 +19,10 @@ def journey():
 def reach():
     return render_template("reach.html")
 
+@app.route("/project")
+def project():
+    return render_template("project.html")
+
 @app.route("/resume")
 def resume():
     return render_template("resume.html")
